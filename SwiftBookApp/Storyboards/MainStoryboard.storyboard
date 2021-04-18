@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I9W-f1-G1p">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Screen View Controller-->
+        <scene sceneID="gnv-iX-6dj">
+            <objects>
+                <viewController id="I9W-f1-G1p" customClass="MainScreenViewController" customModule="SwiftBookApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ww5-6q-e0m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2021-04-18 at 21.56.19" translatesAutoresizingMaskIntoConstraints="NO" id="F89-3o-pkq">
+                                <rect key="frame" x="16" y="50" width="343" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="172" id="vcf-fy-cKa"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdb-u4-epZ">
+                                <rect key="frame" x="310" y="16" width="49" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="AQQ-2x-jQv"/>
+                                    <constraint firstAttribute="width" constant="49" id="XEi-ex-X1C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="56"/>
+                                <state key="normal" title="Button">
+                                    <imageReference key="image" image="person.circle" catalog="system" symbolScale="large" renderingMode="template"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QnA-Nw-PuB">
+                                <rect key="frame" x="16" y="16" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="b66-7m-hcR"/>
+                                    <constraint firstAttribute="height" constant="40" id="ivk-YK-dv7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="line.horizontal.3" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large" weight="bold">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQe-sW-gDj">
+                                <rect key="frame" x="132" y="230" width="111" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.96101681472081224" blue="0.80798626425595388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="N39-Hw-tVy"/>
+                                    <constraint firstAttribute="width" constant="111" id="NA7-nc-Gn8"/>
+                                </constraints>
+                                <state key="normal" title="Купить курс">
+                                    <color key="titleColor" red="0.14161643400000001" green="0.14161643400000001" blue="0.14161643400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2021-04-18 at 22.31.10" translatesAutoresizingMaskIntoConstraints="NO" id="43T-dq-h1g">
+                                <rect key="frame" x="16" y="268" width="343" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="Xke-fU-7Jo"/>
+                                    <constraint firstAttribute="width" constant="343" id="hQz-Kx-tZN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vij-mP-ilD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="43T-dq-h1g" firstAttribute="leading" secondItem="Vij-mP-ilD" secondAttribute="leading" constant="16" id="2TK-Jn-dOI"/>
+                            <constraint firstItem="F89-3o-pkq" firstAttribute="top" secondItem="Vij-mP-ilD" secondAttribute="top" constant="50" id="5Sk-bA-zLh"/>
+                            <constraint firstItem="Vij-mP-ilD" firstAttribute="trailing" secondItem="43T-dq-h1g" secondAttribute="trailing" constant="16" id="5hZ-ju-LSf"/>
+                            <constraint firstItem="43T-dq-h1g" firstAttribute="centerX" secondItem="ww5-6q-e0m" secondAttribute="centerX" id="6jR-NH-iSh"/>
+                            <constraint firstItem="Vij-mP-ilD" firstAttribute="trailing" secondItem="F89-3o-pkq" secondAttribute="trailing" constant="16" id="7Ff-jo-hfn"/>
+                            <constraint firstItem="QnA-Nw-PuB" firstAttribute="top" secondItem="Vij-mP-ilD" secondAttribute="top" constant="16" id="Nad-7X-h4w"/>
+                            <constraint firstItem="F89-3o-pkq" firstAttribute="centerX" secondItem="ww5-6q-e0m" secondAttribute="centerX" id="QgE-ly-FsQ"/>
+                            <constraint firstItem="Qdb-u4-epZ" firstAttribute="top" secondItem="Vij-mP-ilD" secondAttribute="top" constant="16" id="WSG-gm-VDY"/>
+                            <constraint firstItem="QnA-Nw-PuB" firstAttribute="leading" secondItem="Vij-mP-ilD" secondAttribute="leading" constant="16" id="XfP-ZO-n9D"/>
+                            <constraint firstItem="43T-dq-h1g" firstAttribute="top" secondItem="JQe-sW-gDj" secondAttribute="bottom" constant="8" symbolic="YES" id="fgO-hf-SZW"/>
+                            <constraint firstItem="JQe-sW-gDj" firstAttribute="top" secondItem="F89-3o-pkq" secondAttribute="bottom" constant="8" symbolic="YES" id="iqg-V5-mNz"/>
+                            <constraint firstItem="JQe-sW-gDj" firstAttribute="centerX" secondItem="ww5-6q-e0m" secondAttribute="centerX" id="r2n-yx-bl0"/>
+                            <constraint firstItem="Vij-mP-ilD" firstAttribute="trailing" secondItem="Qdb-u4-epZ" secondAttribute="trailing" constant="16" id="xzx-5p-Usc"/>
+                            <constraint firstItem="F89-3o-pkq" firstAttribute="leading" secondItem="Vij-mP-ilD" secondAttribute="leading" constant="16" id="yaL-zC-0pv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dLN-QD-shT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-229.59999999999999" y="47.226386806596707"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Screenshot 2021-04-18 at 21.56.19" width="1220" height="532"/>
+        <image name="Screenshot 2021-04-18 at 22.31.10" width="1123" height="514"/>
+        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
