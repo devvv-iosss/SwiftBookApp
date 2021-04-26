@@ -36,10 +36,13 @@
                                             <imageReference key="image" image="person.circle" catalog="system" symbolScale="large" renderingMode="template"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="0MC-mX-8IG" kind="show" id="uBG-me-cml"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dez-wV-drh">
                                         <rect key="frame" x="16" y="488" width="343" height="588.5"/>
-                                        <mutableString key="text">Наш сайт SwiftBook.ru был создан в помощь начинающим и не только Swift - программистам. В 2014 году Swift был анонсирован как официальный язык Apple, который пришел на замену языку Objective-C. И с того самого дня появился наш SwiftBook.ru.
+                                        <string key="text">Наш сайт SwiftBook.ru был создан в помощь начинающим и не только Swift - программистам. В 2014 году Swift был анонсирован как официальный язык Apple, который пришел на замену языку Objective-C. И с того самого дня появился наш SwiftBook.ru.
 
 SwiftBook.ru является №1 ресурсом по обучению программированию на языке Swift в России и в странах СНГ!
 
@@ -47,7 +50,7 @@ SwiftBook.ru является №1 ресурсом по обучению про
 
 Сейчас команда SwiftBook.ru - это молодые, неравнодушные и очень любящие программирование специалисты, уверенные, что будущее за Swift. Мы делаем Swift ближе для русско-говорящих разработчиков.
 
-Изначально полное отсутствие информации побудило нас перевести документацию Apple, затем начать изучать, переводить иностранные статьи и туториалы, и начать писать собственные курсы, видео-уроки, статьи.</mutableString>
+Изначально полное отсутствие информации побудило нас перевести документацию Apple, затем начать изучать, переводить иностранные статьи и туториалы, и начать писать собственные курсы, видео-уроки, статьи.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -70,7 +73,7 @@ SwiftBook.ru является №1 ресурсом по обучению про
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQe-sW-gDj">
-                                        <rect key="frame" x="140" y="257" width="111" height="30"/>
+                                        <rect key="frame" x="136" y="257" width="111" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.96101681472081224" blue="0.80798626425595388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="111" id="zci-oQ-z7v"/>
@@ -107,6 +110,7 @@ SwiftBook.ru является №1 ресурсом по обучению про
                                     <constraint firstItem="F89-3o-pkq" firstAttribute="trailing" secondItem="43T-dq-h1g" secondAttribute="trailing" id="Es6-0c-lZT"/>
                                     <constraint firstAttribute="bottom" secondItem="J8P-DJ-gt2" secondAttribute="bottom" constant="2400" id="EuF-Ik-HXI"/>
                                     <constraint firstItem="43T-dq-h1g" firstAttribute="top" secondItem="JQe-sW-gDj" secondAttribute="bottom" constant="8" symbolic="YES" id="FQh-ON-r35"/>
+                                    <constraint firstItem="JQe-sW-gDj" firstAttribute="centerX" secondItem="swJ-2k-DLL" secondAttribute="centerX" id="KKJ-cC-Dnb"/>
                                     <constraint firstItem="F89-3o-pkq" firstAttribute="top" secondItem="Qdb-u4-epZ" secondAttribute="bottom" constant="8" symbolic="YES" id="Log-pc-RuO"/>
                                     <constraint firstItem="dez-wV-drh" firstAttribute="leading" secondItem="swJ-2k-DLL" secondAttribute="leading" constant="16" id="Q61-fQ-R0V"/>
                                     <constraint firstAttribute="trailing" secondItem="H60-yg-tmA" secondAttribute="trailing" constant="16" id="R5P-FL-Lg2"/>
@@ -119,7 +123,6 @@ SwiftBook.ru является №1 ресурсом по обучению про
                                     <constraint firstItem="Qdb-u4-epZ" firstAttribute="top" secondItem="swJ-2k-DLL" secondAttribute="top" constant="20" id="gUO-Sd-WRg"/>
                                     <constraint firstItem="H60-yg-tmA" firstAttribute="leading" secondItem="swJ-2k-DLL" secondAttribute="leading" constant="16" id="inD-xH-DHu"/>
                                     <constraint firstItem="J8P-DJ-gt2" firstAttribute="top" secondItem="dez-wV-drh" secondAttribute="bottom" constant="55.5" id="oEI-aw-Lwh"/>
-                                    <constraint firstItem="JQe-sW-gDj" firstAttribute="leading" secondItem="swJ-2k-DLL" secondAttribute="leading" constant="140" id="pFt-X2-Tj6"/>
                                     <constraint firstItem="F89-3o-pkq" firstAttribute="centerX" secondItem="swJ-2k-DLL" secondAttribute="centerX" id="qJ3-ra-EG6"/>
                                     <constraint firstItem="JQe-sW-gDj" firstAttribute="top" secondItem="F89-3o-pkq" secondAttribute="bottom" constant="8" symbolic="YES" id="vdf-Vt-o3z"/>
                                     <constraint firstItem="F89-3o-pkq" firstAttribute="leading" secondItem="43T-dq-h1g" secondAttribute="leading" id="yQR-6X-2Tx"/>
@@ -190,14 +193,23 @@ SwiftBook.ru является №1 ресурсом по обучению про
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nY6-Tc-FTR">
                                         <rect key="frame" x="0.0" y="100" width="86" height="30"/>
                                         <state key="normal" title="О нас"/>
+                                        <connections>
+                                            <segue destination="ujP-lT-XuA" kind="show" id="8PL-De-8nU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xt-9l-nmF">
                                         <rect key="frame" x="0.0" y="150" width="86" height="30"/>
                                         <state key="normal" title="Цены"/>
+                                        <connections>
+                                            <action selector="cancelWithSender:" destination="Rny-sK-4fo" eventType="touchUpInside" id="vpc-Mf-bpQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROd-4F-cLH">
                                         <rect key="frame" x="0.0" y="200" width="86" height="30"/>
                                         <state key="normal" title="Отзывы"/>
+                                        <connections>
+                                            <action selector="cancelWithSender:" destination="Rny-sK-4fo" eventType="touchUpInside" id="mbK-YR-nPz"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -221,6 +233,70 @@ SwiftBook.ru является №1 ресурсом по обучению про
             </objects>
             <point key="canvasLocation" x="518" y="47"/>
         </scene>
+        <!--About Us View Controller-->
+        <scene sceneID="wSd-cZ-Xex">
+            <objects>
+                <viewController id="ujP-lT-XuA" customClass="AboutUsViewController" customModule="SwiftBookApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="27m-jz-HsV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2021-04-26 at 08.42.44" translatesAutoresizingMaskIntoConstraints="NO" id="NKK-jR-tgk">
+                                <rect key="frame" x="16" y="70" width="343" height="243"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Mw-0M-eiR">
+                                <rect key="frame" x="16" y="329" width="343" height="588.5"/>
+                                <mutableString key="text">Наш сайт SwiftBook.ru был создан в помощь начинающим и не только Swift - программистам. В 2014 году Swift был анонсирован как официальный язык Apple, который пришел на замену языку Objective-C. И с того самого дня появился наш SwiftBook.ru.
+
+SwiftBook.ru является №1 ресурсом по обучению программированию на языке Swift в России и в странах СНГ!
+
+Среди наших пользователей вы можете встретить людей даже из США и Европы, что конечно, очень радует нас!
+
+Сейчас команда SwiftBook.ru - это молодые, неравнодушные и очень любящие программирование специалисты, уверенные, что будущее за Swift. Мы делаем Swift ближе для русско-говорящих разработчиков.
+
+Изначально полное отсутствие информации побудило нас перевести документацию Apple, затем начать изучать, переводить иностранные статьи и туториалы, и начать писать собственные курсы, видео-уроки, статьи.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Fa-MX-CkK">
+                                <rect key="frame" x="320" y="16" width="39" height="30"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="cancelAction" destination="ujP-lT-XuA" eventType="touchUpInside" id="dwS-gu-HJ0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BY6-zI-9WZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7Mw-0M-eiR" secondAttribute="trailing" constant="16" id="1Zd-NC-IQa"/>
+                            <constraint firstItem="BY6-zI-9WZ" firstAttribute="trailing" secondItem="1Fa-MX-CkK" secondAttribute="trailing" constant="16" id="40L-XE-YMR"/>
+                            <constraint firstItem="NKK-jR-tgk" firstAttribute="leading" secondItem="27m-jz-HsV" secondAttribute="leadingMargin" id="8Yq-ro-bHb"/>
+                            <constraint firstItem="1Fa-MX-CkK" firstAttribute="top" secondItem="BY6-zI-9WZ" secondAttribute="top" constant="16" id="Akl-EE-wOs"/>
+                            <constraint firstItem="7Mw-0M-eiR" firstAttribute="leading" secondItem="BY6-zI-9WZ" secondAttribute="leading" constant="16" id="Gcu-js-gyH"/>
+                            <constraint firstItem="BY6-zI-9WZ" firstAttribute="bottom" secondItem="NKK-jR-tgk" secondAttribute="bottom" constant="334" id="WCw-N3-sdA"/>
+                            <constraint firstItem="NKK-jR-tgk" firstAttribute="top" secondItem="BY6-zI-9WZ" secondAttribute="top" constant="70" id="n4o-hr-61a"/>
+                            <constraint firstItem="7Mw-0M-eiR" firstAttribute="top" secondItem="NKK-jR-tgk" secondAttribute="bottom" constant="16" id="sGa-bv-nBL"/>
+                            <constraint firstItem="NKK-jR-tgk" firstAttribute="trailing" secondItem="27m-jz-HsV" secondAttribute="trailingMargin" id="uSe-zF-zgc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BVu-Xk-Sh4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M0o-Jc-eOf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1333.5999999999999" y="499.70014992503752"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="Aaq-zP-Nl0">
+            <objects>
+                <viewControllerPlaceholder id="0MC-mX-8IG" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7ZN-GR-dtn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Dt-Ya-pLj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="324" y="-1020"/>
+        </scene>
         <!--Schedule View Controller-->
         <scene sceneID="UWj-Nm-xGR">
             <objects>
@@ -228,18 +304,41 @@ SwiftBook.ru является №1 ресурсом по обучению про
                     <view key="view" contentMode="scaleToFill" id="zGn-r0-oND">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cci-8C-Iav">
+                                <rect key="frame" x="306" y="31" width="39" height="30"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="cancelAction" destination="bLo-uX-xks" eventType="touchUpInside" id="Yd8-nc-ide"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sch" translatesAutoresizingMaskIntoConstraints="NO" id="7rg-g9-Tkm">
+                                <rect key="frame" x="28" y="77" width="319" height="586"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="586" id="2Qd-uk-gGD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="cRZ-vY-6cG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cRZ-vY-6cG" firstAttribute="trailing" secondItem="cci-8C-Iav" secondAttribute="trailing" constant="30" id="95s-jX-TsZ"/>
+                            <constraint firstItem="7rg-g9-Tkm" firstAttribute="leading" secondItem="cRZ-vY-6cG" secondAttribute="leading" constant="28" id="End-MQ-MCq"/>
+                            <constraint firstItem="7rg-g9-Tkm" firstAttribute="top" secondItem="cci-8C-Iav" secondAttribute="bottom" constant="16" id="PFM-e0-C5A"/>
+                            <constraint firstItem="7rg-g9-Tkm" firstAttribute="centerX" secondItem="zGn-r0-oND" secondAttribute="centerX" id="PFq-RB-GS1"/>
+                            <constraint firstItem="cci-8C-Iav" firstAttribute="top" secondItem="cRZ-vY-6cG" secondAttribute="top" constant="31" id="otu-0Y-V5O"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BIU-LM-xUO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1372" y="46.326836581709152"/>
+            <point key="canvasLocation" x="1334" y="-211"/>
         </scene>
     </scenes>
     <resources>
         <image name="Screenshot 2021-04-18 at 21.56.19" width="1220" height="532"/>
         <image name="Screenshot 2021-04-18 at 22.31.10" width="1123" height="514"/>
+        <image name="Screenshot 2021-04-26 at 08.42.44" width="938" height="654"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <image name="pedagog" width="870" height="1281"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
