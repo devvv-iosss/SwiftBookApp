@@ -246,7 +246,7 @@ SwiftBook.ru является №1 ресурсом по обучению про
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Mw-0M-eiR">
                                 <rect key="frame" x="16" y="329" width="343" height="588.5"/>
-                                <mutableString key="text">Наш сайт SwiftBook.ru был создан в помощь начинающим и не только Swift - программистам. В 2014 году Swift был анонсирован как официальный язык Apple, который пришел на замену языку Objective-C. И с того самого дня появился наш SwiftBook.ru.
+                                <string key="text">Наш сайт SwiftBook.ru был создан в помощь начинающим и не только Swift - программистам. В 2014 году Swift был анонсирован как официальный язык Apple, который пришел на замену языку Objective-C. И с того самого дня появился наш SwiftBook.ru.
 
 SwiftBook.ru является №1 ресурсом по обучению программированию на языке Swift в России и в странах СНГ!
 
@@ -254,7 +254,7 @@ SwiftBook.ru является №1 ресурсом по обучению про
 
 Сейчас команда SwiftBook.ru - это молодые, неравнодушные и очень любящие программирование специалисты, уверенные, что будущее за Swift. Мы делаем Swift ближе для русско-говорящих разработчиков.
 
-Изначально полное отсутствие информации побудило нас перевести документацию Apple, затем начать изучать, переводить иностранные статьи и туториалы, и начать писать собственные курсы, видео-уроки, статьи.</mutableString>
+Изначально полное отсутствие информации побудило нас перевести документацию Apple, затем начать изучать, переводить иностранные статьи и туториалы, и начать писать собственные курсы, видео-уроки, статьи.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -287,10 +287,10 @@ SwiftBook.ru является №1 ресурсом по обучению про
             </objects>
             <point key="canvasLocation" x="1333.5999999999999" y="499.70014992503752"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--AnnaStoryboardID-->
         <scene sceneID="Aaq-zP-Nl0">
             <objects>
-                <viewControllerPlaceholder id="0MC-mX-8IG" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="AnnaStoryboard" referencedIdentifier="AnnaStoryboardID" id="0MC-mX-8IG" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="7ZN-GR-dtn"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Dt-Ya-pLj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
