@@ -16,13 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2021-04-18 at 21.39.36" translatesAutoresizingMaskIntoConstraints="NO" id="JNc-yb-u3J">
-                                <rect key="frame" x="75.5" y="107" width="224" height="93"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="224" id="haa-xm-5ea"/>
-                                    <constraint firstAttribute="height" constant="93" id="xtZ-1p-8az"/>
-                                </constraints>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2021-04-18 at 21.39.56" translatesAutoresizingMaskIntoConstraints="NO" id="WFY-to-3Fj">
                                 <rect key="frame" x="118.5" y="300" width="138" height="165"/>
                                 <constraints>
@@ -30,14 +23,31 @@
                                     <constraint firstAttribute="height" constant="165" id="UO9-yq-dSP"/>
                                 </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AbZ-LD-Mvo">
+                                <rect key="frame" x="30" y="129" width="315.5" height="71.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SWIFTBOOK.RU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ah-UI-mWJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="315.5" height="43"/>
+                                        <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="39"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="online school" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elI-qW-KeG">
+                                        <rect key="frame" x="107.5" y="51" width="100.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="JNc-yb-u3J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="107" id="3Cn-3Y-XxL"/>
-                            <constraint firstItem="WFY-to-3Fj" firstAttribute="top" secondItem="JNc-yb-u3J" secondAttribute="bottom" constant="100" id="50p-tG-WlM"/>
+                            <constraint firstItem="AbZ-LD-Mvo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="129" id="DNB-G0-WIa"/>
                             <constraint firstItem="WFY-to-3Fj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="adw-Dr-pgb"/>
-                            <constraint firstItem="JNc-yb-u3J" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="qtT-c5-uJe"/>
+                            <constraint firstItem="AbZ-LD-Mvo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="fwS-wY-pAn"/>
+                            <constraint firstItem="WFY-to-3Fj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="zGh-8H-yMC"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -47,7 +57,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Screenshot 2021-04-18 at 21.39.36" width="224" height="93"/>
         <image name="Screenshot 2021-04-18 at 21.39.56" width="279" height="329"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
